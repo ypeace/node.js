@@ -1,0 +1,28 @@
+function Person(name) {
+    this.name = name;
+}
+Person.prototype.run = function() {
+    console.log(this.name + '  running')
+};
+let p = new Person('xiaoming');
+p.run();
+/
+目前的任务：
+1.熟悉地图那一块的东西//暂缓
+2.熟悉ui库//会用就行
+3.把饿了么做完(完全重新完善)
+4.路由//归类饿了么
+5.git//
+7.把学过的知识复习一遍，系统的整理成博客文档
+8.echart/g2
+9.react-table
+10.数据请求的方法（axious）
+
+function Person(name) {
+    this.name = name;
+}
+Person.prototype.run = function() {
+    console.log(this.name + '  running')
+};
+let p = new Person('xiaoming');
+p.run();
