@@ -3,8 +3,11 @@
 在js中的顶层对象是window
 在node中的顶层对象global
 在node中没有window（浏览器的窗口）对象
+* */
+var a = 100;
+
+console.log(global.a);//undefined  模块作用域
+// /*
+/*
 
 * */
-var a=100
-console.log(global.a);//undefined  模块作用域
-
