@@ -3,7 +3,7 @@
 基本的命令行操作命令
   查看版本号 node -v
   在命令行输入Node 进入node.js的交互环境，可以输入任意的javascript语句，回车得到结果（类似console.log）
-  退出node环境，ctrl+c 两次
+  退出node环境，ctrl+c 6两次
 
   关于严格模式：
     每次都手动写“use strict”很麻烦  所以可以给Node传递一个参数，让Node直接为所有js文件开启严格模式  node --use_strict xx.js
