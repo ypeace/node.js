@@ -23,7 +23,7 @@ process.stdin.resume();//开启输入流
 
 let a;
 let b;
-process.stdout.write('请输入a的值');
+process.stdout.write('请输入a的值ff');
 process.stdin.on('data', function (chunk) {
   if (!a) {
     a = Number(chunk);
