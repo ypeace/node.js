@@ -1,44 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>╭(╯^╰)╮</title>
+    <style>
+       .abc{
+              width:100px;
+              height:100px;
+              background:red;
+            }
+        .container{
+            width: 580px;
+            height: 325px;
+            position: relative;
+        }
+        .container:hover:before{
+            transition: left 2s;/*过渡,改变闪光的位置*/
+            left: 770px;
+        }
+        .container:before{/*在图片之前插入闪光*/
+            content: '';
+            position: absolute;
+            width: 23px;
+            height: 325px;
+            top: 0;
+            left: -190px;
+            overflow: hidden;
+            background-image: linear-gradient(to right,rgba(255,255,255,.2) 0,rgba(255,255,255,.5) 50%,rgba(255,255,255,.2) 100%);/*linear-gradient渐变效果*/
+            transform: skewX(-25deg);/*沿x轴倾斜*/
+        }
+
+    </style>
 </head>
 <body>
-  <li
-                      className="li"
-                      key={index}
-                      onClick={() => {
-                        onShowDetail(item._id);
-                      }}>
-                      <div className="state">入库中</div>
-                      <div className="right">
-                        <div>
-                          <div>
-                            <span className="time">创建时间：{item.createdAt ? item.createdAt.toLocaleString() : null}</span>
-                          </div>
-                          <div>
-                            <span className="time">创建时间：{item.createdAt ? item.createdAt.toLocaleString() : null}</span>
-                          </div>
-                        </div>
-                        <div>
-                          <div>
-                            <span className="time">创建时间：{item.createdAt ? item.createdAt.toLocaleString() : null}</span>
-                          </div>
-                          <div>
-                            <span className="time">创建时间：{item.createdAt ? item.createdAt.toLocaleString() : null}</span>
-                          </div>
-                        </div>
-                        <div>
-                          <div>
-                            <span className="time">22</span>
-                          </div>
-                          <div>
-                            <span className="time">数量</span>
-                          </div>
-                        </div>
-                      </div>
-
-                    </li>
+    <div class="container">
+        <div class="abc">12121</div>
+    </div>
 </body>
 </html>
