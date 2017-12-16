@@ -43,16 +43,7 @@ sendCommand (command, param) {
     }
 
     renderContent () {
-        const { boxId } = this.state;
-        return (
-            <div>
-                <h2>盒子调试</h2>
-                <div className="search-row-group">
-                    <div className="search-row">
-                        <span className="search-row-label">盒子号：</span>
-                        <TextField
-                            value={boxId}
-                            hintText="输入完整的盒子号"
+
                             onChange={(e, value) => this.setState({ boxId: value })}
                         />
                     </div>
