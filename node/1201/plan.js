@@ -48,7 +48,7 @@ sendCommand (command, param) {
                         />
                     </div>
                 </div>
-                <RaisedButton label="获取状态" disabled={!boxId} onTouchTap={_ => this.sendCommand(6)}/>
+                <RaisedButton label="获取状态" disabled={!boxId} onTouchTap={_ => this.sendCommand(6)}/>656
                 <RaisedButton label="启动" disabled={!boxId} onTouchTap={_ => this.sendCommand(0)}/>
                 <RaisedButton label="关闭" disabled={!boxId} onTouchTap={_ => this.sendCommand(4)}/>
                 <RaisedButton label="设防" disabled={!boxId} onTouchTap={_ => this.sendCommand(1)}/>
